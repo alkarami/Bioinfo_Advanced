@@ -9,7 +9,7 @@ install.packages("parallel")
 ## Get list of files from the proper directory
 
 gillian.files <- list.files('~/../../Volumes/Expansion/FSCMC/Bioinfo_Advanced/fq.gz files',
-                            full.names = T)
+                            full.names = T, pattern = '.fq.gz')
 
 ## PART I: Alignment to genome with QuasR
 
