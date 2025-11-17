@@ -80,3 +80,5 @@ XYM_63_MACS <- callpeak(tfile = bamfiles[10],
                         gsize = 'mm',
                         name = 'XYM_63',
                         outdir = '../../Volumes/Expansion/FSCMC/Bioinfo_Advanced/fq.gz files')
+
+
