@@ -108,6 +108,23 @@ dba.FvM <- dba.report(dba.FvM)
 # design with just Factor (ChrSex) and directly comparing IE 
 # XYM vs XXF. This just depends on what you are trying to check out.
 
+dba.XXFvXXM <- dba.contrast(gillian.dba, 
+                        contrast = c('Factor','XXF','XXM'),
+                        design = "~Factor")
+
+
+dba.XXFvXXM <- dba.analyze(dba.XXFvXXM)
+dba.XXFvXXM <- dba.report(dba.XXFvXXM)
+
+dba.XYFvXYM <- dba.contrast(gillian.dba, 
+                            contrast = c('Factor','XYF','XYM'),
+                            design = "~Factor")
+
+
+dba.XYFvXYM <- dba.analyze(dba.XYFvXYM)
+dba.XYFvXYM <- dba.report(dba.XYFvXYM)
+
+
 # Just looking at sites is not that helpful, though. Let's add 
 # information:
 # We can use the annotatePeak function from ChIPSeeker and use the
@@ -158,7 +175,7 @@ dba.FvM.pos.go <- enrichGO(gene = dba.FvM.pos$geneId,
 
 ## Easy visualization with a dotplot
 
-dotplot(dba.FvM.pos.go, showCategory=10)
+dotplot(dba.FvM.pos.go, showCategory=20)
 
 ## That's it for now! 
 
