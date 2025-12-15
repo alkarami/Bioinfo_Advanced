@@ -76,7 +76,6 @@ merged_JFB <- IntegrateLayers(object = merged_JFB,
                               verbose = FALSE)
 merged_JFB <- JoinLayers(merged_JFB)
 
-
 ## Use the first 6 PCs for neighbor search and clustering.
 merged_JFB <- FindNeighbors(merged_JFB, dims = 1:6,
                             reduction = 'integrated.rpca')
