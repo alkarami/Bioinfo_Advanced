@@ -48,7 +48,7 @@ JFB37vJFB41 <- JFB37vJFB41[JFB37vJFB41$p_val_adj<0.05,]
 
 # Abhinav, this is your turn: give me 3 genes!
 
-ageneset <- c()
+ageneset <- c('tdT','Krt19','Hnf4a')
 
 # First, the FeaturePlot, which colors cells by their expression
 # of specific genes in the UMAP:
